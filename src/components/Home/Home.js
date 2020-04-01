@@ -1,10 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Hero from "../Hero";
-import Features from "../Features";
-import Pricing from "../Pricing";
-import Contact from "../Contact";
+import Menu from "../Menu";
 
 /**
  * Defines the prop types
@@ -22,10 +19,7 @@ const defaultProps = {};
 const Home = props => {
   return (
     <div className="Home">
-      <Hero />
-      <Features />
-      <Pricing />
-      <Contact />
+      <Menu />
     </div>
   );
 };
