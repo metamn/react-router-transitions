@@ -72,6 +72,9 @@ const Menu = props => {
           <Route path="*">
             <ul>
               <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
                 <Link to="/Hero">Hero</Link>
               </li>
               <li>

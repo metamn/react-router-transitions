@@ -17,7 +17,8 @@ const defaultProps = {};
  */
 const Container = styled("div")(props => ({
   minHeight: "100vh",
-  borderBottom: "1px solid"
+  borderBottom: "1px solid",
+  backgroundColor: "lightyellow"
 }));
 
 /**
