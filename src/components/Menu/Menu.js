@@ -42,6 +42,25 @@ const Container = styled("div")(props => ({
   }
 }));
 
+const Content = () => {
+  const location = useLocation();
+
+  return (
+    <div className="Content">
+      <TransitionGroup>
+        <CSSTransition key={location.key} classNames="fade" timeout={300}>
+          <Switch location={location}>
+            <Route path="/Hero" children={<Hero />} />
+            <Route path="/Features" children={<Features />} />
+            <Route path="/Pricing" children={<Pricing />} />
+            <Route path="/Contact" children={<Contact />} />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
+    </div>
+  );
+};
+
 /**
  * Displays the component
  */
@@ -65,12 +84,7 @@ const Menu = props => {
                 <Link to="/Contact">Contact</Link>
               </li>
             </ul>
-            <div className="Content">
-              <Hero />
-              <Features />
-              <Pricing />
-              <Contact />
-            </div>
+            <Content />
           </Route>
         </Switch>
       </Router>
