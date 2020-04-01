@@ -1,3 +1,3 @@
 # react-router-transitions
 
-Playin'
+Playin' with https://reacttraining.com/react-router/web/example/animated-transitions
